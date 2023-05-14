@@ -8,3 +8,5 @@ cl.hpp
 opencl.hpp
 src/pyclblast/dist
 *.egg-info
+zig-cache/
+zig-out/
