@@ -3,8 +3,8 @@
 	.version = "0.1.0",
 	.dependencies = .{
 		.@"OpenCL-ICD-Loader" = .{
-			.url = "https://github.com/leroycep/OpenCL-ICD-Loader/archive/f3378b98c089d5842e52c2c668f41a9d41553ccc.tar.gz",
-			.hash = "122078f6a26f4916acddde177a29c700b1a8effe895fce42754360fa348dbda584ba",
+			.url = "https://github.com/leroycep/OpenCL-ICD-Loader/archive/30bf1d6aa3735cdc01ead95c1d11b207349e44e9.tar.gz",
+			.hash = "122015ae55d0d036a2ba6ef48a63b6390a93b7ff4a51d5188fa9a7926481be8df2ff",
 		},
 	},
 }
