@@ -124,8 +124,9 @@ pub fn build(b: *std.build.Builder) void {
                 "src/tuning/tuning_api.cpp",
             }, &.{"-std=c++11"});
 
-            const opencl_headers = b.dependency("OpenCL-Headers", .{});
+            const opencl_headers = b.dependency("OpenCL-ICD-Loader", .{});
             clblast.linkLibrary(opencl_headers.artifact("OpenCL"));
+            clblast.installLibraryHeaders(opencl_headers.artifact("OpenCL"));
         },
         else => std.debug.panic("Backend not implemented in build.zig: {}", .{backend}),
     }

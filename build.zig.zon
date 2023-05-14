@@ -2,9 +2,9 @@
 	.name = "clblast",
 	.version = "0.1.0",
 	.dependencies = .{
-		.@"OpenCL-Headers" = .{
-			.url = "https://github.com/leroycep/OpenCL-Headers/archive/49eff2f1281aedb7a7ad89e938629ccb515f613b.tar.gz",
-			.hash = "1220fb5209b55f2fa6d778f0a74412c9a63c3e80d3a5fa88191978083b85a598b799",
+		.@"OpenCL-ICD-Loader" = .{
+			.url = "https://github.com/leroycep/OpenCL-ICD-Loader/archive/f3378b98c089d5842e52c2c668f41a9d41553ccc.tar.gz",
+			.hash = "122078f6a26f4916acddde177a29c700b1a8effe895fce42754360fa348dbda584ba",
 		},
 	},
 }
