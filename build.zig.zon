@@ -1,0 +1,10 @@
+.{
+	.name = "clblast",
+	.version = "0.1.0",
+	.dependencies = .{
+		.@"OpenCL-Headers" = .{
+			.url = "https://github.com/leroycep/OpenCL-Headers/archive/49eff2f1281aedb7a7ad89e938629ccb515f613b.tar.gz",
+			.hash = "1220fb5209b55f2fa6d778f0a74412c9a63c3e80d3a5fa88191978083b85a598b799",
+		},
+	},
+}

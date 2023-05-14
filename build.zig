@@ -123,12 +123,14 @@ pub fn build(b: *std.build.Builder) void {
                 "src/clblast_c.cpp",
                 "src/tuning/tuning_api.cpp",
             }, &.{"-std=c++11"});
+
+            const opencl_headers = b.dependency("OpenCL-Headers", .{});
+            clblast.linkLibrary(opencl_headers.artifact("OpenCL"));
         },
         else => std.debug.panic("Backend not implemented in build.zig: {}", .{backend}),
     }
 
     clblast.defineCMacro("OPENCL_API", "1");
-    clblast.linkSystemLibrary("OpenCL");
     clblast.linkLibC();
     clblast.linkLibCpp();
     b.installArtifact(clblast);
@@ -162,7 +164,6 @@ fn addCSample(b: *std.Build, name: []const u8, clblast: *std.Build.CompileStep, 
     sample_exe.c_std = .C99;
     sample_exe.addCSourceFile(b.fmt("samples/{s}.c", .{name}), &.{});
     sample_exe.linkLibrary(clblast);
-    sample_exe.linkSystemLibrary("OpenCL");
 
     return sample_exe;
 }
