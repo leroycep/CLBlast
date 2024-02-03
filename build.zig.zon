@@ -1,10 +1,11 @@
 .{
-	.name = "clblast",
-	.version = "0.1.0",
-	.dependencies = .{
-		.@"OpenCL-ICD-Loader" = .{
-			.url = "https://github.com/leroycep/OpenCL-ICD-Loader/archive/30bf1d6aa3735cdc01ead95c1d11b207349e44e9.tar.gz",
-			.hash = "122015ae55d0d036a2ba6ef48a63b6390a93b7ff4a51d5188fa9a7926481be8df2ff",
-		},
-	},
+    .name = "clblast",
+    .version = "0.1.0",
+    .paths = .{""},
+    .dependencies = .{
+        .@"OpenCL-ICD-Loader" = .{
+            .url = "https://github.com/leroycep/OpenCL-ICD-Loader/archive/03ca42b65843a9d11079e66c57a1aa3394646179.tar.gz",
+            .hash = "122024eda3cbf7ce976da6ea8d4e210b9449c8f1a4d86b8fd4ff8f89f89b595dfa0c",
+        },
+    },
 }
